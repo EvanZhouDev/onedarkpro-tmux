@@ -75,7 +75,7 @@ main() {
   local pane_format=$(load_modules "pane_default_format" "$modules_custom_path" "$modules_pane_path")
 
   setw pane-border-status "$pane_border_status"
-  setw pane-active-border-style "$pane_active_border_style"
+  setw pane-active-border-style "fg=#abb2bf,bg=#282c34"
   setw pane-border-style "$pane_border_style"
   setw pane-border-format "$pane_format"
 
