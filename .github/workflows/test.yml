@@ -32,7 +32,7 @@ jobs:
         run: |
           bash --version
           tmux -V
-          ./.github/scripts/test.bash ./catppuccin.tmux
+          ./.github/scripts/test.bash ./onedarkpro.tmux
 
   old-bash:
     name: "Old Bash"
@@ -50,4 +50,4 @@ jobs:
           chmod +x "$tmp/tmux"
           export PATH="$tmp:$PATH"
           bash --version
-          ./.github/scripts/test.bash ./catppuccin.tmux
+          ./.github/scripts/test.bash ./onedarkpro.tmux

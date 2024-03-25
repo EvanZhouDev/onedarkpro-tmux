@@ -28,6 +28,6 @@ jobs:
         uses: ludeeus/action-shellcheck@master
         with:
           severity: error
-          additional_files: "catppuccin.tmux"
+          additional_files: "onedarkpro.tmux"
         env:
           SHELLCHECK_OPTS: "-s bash"
