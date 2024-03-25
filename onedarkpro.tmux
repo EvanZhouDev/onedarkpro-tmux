@@ -22,12 +22,6 @@ main() {
   local modules_window_path=$PLUGIN_DIR/window
   local modules_pane_path=$PLUGIN_DIR/pane
 
-  # load local theme
-  local theme="$(get_tmux_option "@onedarkpro_flavour" "mocha")"
-  # NOTE: Pulling in the selected theme by the theme that's being set as local
-  # variables.
-  # shellcheck source=onedarkpro-frappe.tmuxtheme
-  # https://github.com/dylanaraps/pure-sh-bible#parsing-a-keyval-file
   while IFS='=' read -r key val; do
       # Skip over lines containing comments.
       # (Lines starting with '#').
